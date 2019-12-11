@@ -40,7 +40,7 @@ let params = {
         "title": title
     },
     UpdateExpression: "remove info.actors[0]",
-    ConditionExpression: "size(info.actors) > :num",
+    ConditionExpression: "size(info.actors) >= :num",
     ExpressionAttributeValues:{
         ":num": 3
     },
